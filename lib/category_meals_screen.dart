@@ -14,11 +14,12 @@ class CategoryMealsScreen extends StatelessWidget {
     final categoryTitle = routeArgs['title'];
     final categoryId = routeArgs['title'];
     return Scaffold(
-        appBar: AppBar(
-          title: Text(categoryTitle),
-        ),
-        body: Center(
-          child: Text('The Recipes For The Category'),
-        ));
+      appBar: AppBar(
+        title: Text(categoryTitle),
+      ),
+      body: ListView.builder(itemBuilder: (context, index) {
+        return Widget()
+      }, itemCount: ,)
+    );
   }
 }
